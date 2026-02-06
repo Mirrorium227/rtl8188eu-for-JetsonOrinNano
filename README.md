@@ -1,10 +1,11 @@
-使用方式：
-git clone https://github.com/Mirrorium227/rtl8188eu-for-JetsonOrinNano.git
-sudo make -j$(nproc)
-sudo make install
-sudo modprobe 8188eu
+使用方式：  
+git clone https://github.com/Mirrorium227/rtl8188eu-for-JetsonOrinNano.git  
+sudo make -j$(nproc)  
+sudo make install  
+sudo modprobe 8188eu  
 
-原始编译日志：
+原始编译日志：  
+```
 jetson@yahboom:~/rtl8188eu$ sudo make -j$(nproc)
 make ARCH=arm64 CROSS_COMPILE= -C /lib/modules/5.15.148-tegra/build M=/home/jetson/rtl8188eu  modules
 make[1]: 进入目录“/usr/src/linux-headers-5.15.148-tegra-ubuntu22.04_aarch64/3rdparty/canonical/linux-jammy/kernel-source”
@@ -136,3 +137,4 @@ Bus 001 Device 004: ID 1a86:8091 QinHeng Electronics USB HUB
 Bus 001 Device 003: ID 0bda:0179 Realtek Semiconductor Corp. RTL8188ETV Wireless LAN 802.11n Network Adapter
 Bus 001 Device 002: ID 0bda:5411 Realtek Semiconductor Corp. RTS5411 Hub
 Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+```
